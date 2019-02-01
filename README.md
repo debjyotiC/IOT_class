@@ -5,7 +5,7 @@ This repository contains code for IOT class the repository, `Day 1` has codes on
 ## Dependencies required 
   1. `Paho MQTT Client` : https://www.eclipse.org/paho/clients/python/docs/
   2. `SKlearn ML framework` : https://scikit-learn.org/stable/
-  3. `TensorFlow` : 
+  3. `TensorFlow` : https://www.tensorflow.org/install
 
 ## Adding NodeMCU support to Arduino IDE
 Here's how to program the NodeMCU using the Arduino IDE.
