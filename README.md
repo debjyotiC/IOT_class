@@ -11,7 +11,7 @@ This repository contains code for IOT class, `Day 1` has codes on NodeMCU for PI
 Here's how to program the NodeMCU using the Arduino IDE.
 
 `Step 1: Connect your NodeMCU to your computer`
-You need a USB micro B cable to connect with the board. Once you are plugged in, a `blue LED` will start flashing. If your computer is not able to detect the NodeMCU board, you may need to download the driver on this page.
+You need a USB micro B cable to connect with the board. Once you are plugged in, a `blue LED` will start flashing. If your computer is not able to detect the NodeMCU board, you may need to download the driver from this `link` https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers.
 
 `Step 2: Open Arduino IDE`
 You need to have at least Arduino IDE version 1.6.4 to proceed with this.
