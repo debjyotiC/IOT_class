@@ -1,5 +1,5 @@
 ## IOT class
-This repository contains code for IOT class the repository, `Day 1` has codes on NodeMCU for PIR and DHT11 sensor along with Paho MQTT 
+This repository contains code for IOT class, `Day 1` has codes on NodeMCU for PIR and DHT11 sensor along with Paho MQTT 
  
 
 ## Dependencies required 
