@@ -55,6 +55,6 @@ void loop() {
 
 
 # Links
-Link to download `PyCharm` : https://www.jetbrains.com/pycharm/download/#section=windows
-Link to download `Anaconda` : https://www.anaconda.com/distribution/
-Link to download `GitHub Desktop` : https://desktop.github.com/
+1. Link to download `PyCharm` : https://www.jetbrains.com/pycharm/download/#section=windows
+2. Link to download `Anaconda` : https://www.anaconda.com/distribution/
+3. Link to download `GitHub Desktop` : https://desktop.github.com/
