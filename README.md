@@ -35,7 +35,6 @@ For our first program, we'll blink a LED connected to one of the digital pins of
 In this example, I'll connect the LED to D7 as it is printed on the board. D7 is GPIO13 according to the image above. And so here's my code (which is basically the example Blink code in Arduino):
 
 ```
-CPP
 // the setup function runs once when you press reset or power the board
 void setup() {
   // initialize digital pin 13 as an output.
