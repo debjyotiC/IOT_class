@@ -99,6 +99,8 @@ The wiring scheme for LED on the RPi
 
 <img src="https://github.com/debjyotiC/IOT_class/blob/master/images/01_Blinking-LED_bb-768x583.jpg" width="580">
 
+`Time Series Forecasting` A pdf document detailing the ways of Time Series Forecasting added in Day 2 folder.
+
 
 # Links
 1. Link to download `PyCharm` : https://www.jetbrains.com/pycharm/download/#section=windows
