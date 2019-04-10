@@ -1,6 +1,5 @@
-
- #include "ESP8266_AT.h"
-
+#include "ESP8266_AT.h"
+#include "DHT.h"
 
 #define DOMAIN          "api.thingspeak.com"
 #define PORT            "80"
@@ -10,6 +9,11 @@
 #define SSID            "DebjyotiFi"
 #define PASSWORD        "cxa1619s"
 
+#define DHTPIN 2 
+#define DHTTYPE DHT11 
+
+DHT dht(DHTPIN, DHTTYPE);
+
 char _buffer[400];
 uint8_t Connect_Status;
 
@@ -18,6 +22,7 @@ uint8_t Sample = 0;
 
 void setup() {
   Serial.begin(115200);
+  dht.begin();
  
   while(!ESP8266_Begin());
   ESP8266_WIFIMode(BOTH_STATION_AND_ACCESPOINT);/* 3 = Both (AP and STA) */
@@ -35,8 +40,13 @@ void loop() {
     if(Connect_Status == ESP8266_TRANSMISSION_DISCONNECTED)
     ESP8266_Start(0, DOMAIN, PORT);		/*Connect to TCP port*/
 
+    int h = dht.readHumidity();
+    // Read temperature as Celsius (the default)
+    int t = dht.readTemperature();
+
+
     memset(_buffer, 0, 400);
-    sprintf(_buffer, "GET /update?api_key=%s&field1=%d&field2=%d", API_WRITE_KEY, Sample++, Sample++); 	/*connect to thingspeak server to post data using your API_WRITE_KEY*/
+    sprintf(_buffer, "GET /update?api_key=%s&field1=%d&field2=%d", API_WRITE_KEY, h, t); 	/*connect to thingspeak server to post data using your API_WRITE_KEY*/
     ESP8266_Send(_buffer);
     delay(15000); /* Thingspeak server delay */
 }
