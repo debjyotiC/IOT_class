@@ -2,8 +2,8 @@ import urllib2
 import json
 import time
 
-READ_API_KEY = ''
-CHANNEL_ID =
+READ_API_KEY = 'HEY8K2J4IGVZIZ9J'
+CHANNEL_ID = 475657
 
 
 # get data from cloud
